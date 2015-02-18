@@ -1,0 +1,23 @@
+{
+  "name": "node-file-downloader",
+  "version": "0.1.0",
+  "description": "Simple module letting you download a file from the web, compute stats, retry in case of error, etc",
+  "main": "lib/Downloader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leeroybrun/node-file-downloader.git"
+  },
+  "author": "Leeroy Brun <leeroy.brun@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leeroybrun/node-file-downloader/issues"
+  },
+  "homepage": "https://github.com/leeroybrun/node-file-downloader",
+  "dependencies": {
+    "moment": "^2.9.0",
+    "mt-downloader": "^0.2.8"
+  }
+}
