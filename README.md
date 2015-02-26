@@ -43,7 +43,7 @@ You can then listen to those events :
 
 ## Example
 
-You can find a [complete usage example](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/simple-download.js) available in the examples/ folder.
+You can find a [complete usage example](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/simple-download.js) in the examples/ folder.
 
 ## Downloader object
 
