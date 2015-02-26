@@ -3,7 +3,14 @@ var format = require('../lib/Formatters');
 
 var downloader = new Downloader();
 
-var dl = downloader.downloadFile('http://ipv4.download.thinkbroadband.com/512MB.zip', 'tmp/testFileDownload.zip');
+var dl = downloader.download('http://ipv4.download.thinkbroadband.com/512MB.zip', 'tmp/testFileDownload.zip');
+dl.start();
+
+/*
+	Or with auto-start : 
+
+	var dl = downloader.downloadFile('http://ipv4.download.thinkbroadband.com/512MB.zip', 'tmp/testFileDownload.zip', { autoStart: true });
+*/
 
 dl.on('start', function() {
 	console.log('EVENT - Download started !');
