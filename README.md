@@ -1,5 +1,7 @@
 # Multi Threaded Files Downloader
 
+[![NPM](https://nodei.co/npm/mt-files-downloader.png)](https://nodei.co/npm/mt-files-downloader/)
+
 This module wrap the [mt-downloader](https://www.npmjs.com/package/mt-downloader) module and let you :
 
 - Manage multiple downloads
@@ -10,7 +12,7 @@ This module wrap the [mt-downloader](https://www.npmjs.com/package/mt-downloader
 
 ## Install
 
-	npm install mt-file-downloader
+	npm install mt-files-downloader
 
 ## Usage
 
