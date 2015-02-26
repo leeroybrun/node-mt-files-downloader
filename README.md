@@ -18,7 +18,7 @@ This module wrap the [mt-downloader](https://www.npmjs.com/package/mt-downloader
 
 Require the module :
 
-	var Downloader = require('mt-file-downloader');
+	var Downloader = require('mt-files-downloader');
 
 Create a new Downloader instance :
 
