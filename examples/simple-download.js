@@ -1,5 +1,4 @@
 var Downloader = require('../lib/Downloader');
-var format = require('../lib/Formatters');
 
 var downloader = new Downloader();
 
@@ -37,9 +36,9 @@ var timer = setInterval(function() {
 	} else if(dl.status == 1) {
 		var stats = dl.getStats();
 		console.log('Download progress: '+ stats.total.completed +' %');
-		console.log('Download speed: '+ format.speedFormater(stats.present.speed));
-		console.log('Download time: '+ format.elapsedTimeFormater(stats.present.time));
-		console.log('Download ETA: '+ format.remainingTimeFormater(stats.future.eta));
+		console.log('Download speed: '+ Downloader.Formatters.speed(stats.present.speed));
+		console.log('Download time: '+ Downloader.Formatters.elapsedTime(stats.present.time));
+		console.log('Download ETA: '+ Downloader.Formatters.remainingTime(stats.future.eta));
 	} else if(dl.status == 2) {
 		console.log('Download error... retrying');
 	} else if(dl.status == 3) {

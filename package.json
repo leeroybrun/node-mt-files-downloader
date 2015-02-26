@@ -1,7 +1,7 @@
 {
-  "name": "node-file-downloader",
+  "name": "mt-file-downloader",
   "version": "0.1.0",
-  "description": "Simple module letting you download a file from the web, compute stats, retry in case of error, etc",
+  "description": "Download manager with multiple features : download stats, auto-retry (continue) in case of error, events, etc.",
   "main": "lib/Downloader.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

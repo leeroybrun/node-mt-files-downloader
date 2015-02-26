@@ -50,6 +50,14 @@ You can then listen to those events :
         - autoStart : (true|false) should we automatically start the download ?
 - getDownloadByUrl(url) : get a specified download by URL
 
+### Formatters methods
+
+The Downloader object exposes some formatters for the stats as static methods :
+
+- Downloader.Formatters.speed(speed)
+- Downloader.Formatters.elapsedTime(seconds)
+- Downloader.Formatters.remainingTime(seconds)
+
 ## Download object
 
 ### Properties
