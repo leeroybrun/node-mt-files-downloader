@@ -1,5 +1,5 @@
 {
-  "name": "mt-file-downloader",
+  "name": "mt-files-downloader",
   "version": "0.1.0",
   "description": "Download manager with multiple features : download stats, auto-retry (continue) in case of error, events, etc.",
   "main": "lib/Downloader.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/leeroybrun/node-file-downloader.git"
+    "url": "https://github.com/leeroybrun/node-mt-files-downloader.git"
   },
   "author": "Leeroy Brun <leeroy.brun@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leeroybrun/node-file-downloader/issues"
+    "url": "https://github.com/leeroybrun/node-mt-files-downloader/issues"
   },
-  "homepage": "https://github.com/leeroybrun/node-file-downloader",
+  "homepage": "https://github.com/leeroybrun/node-mt-files-downloader",
   "dependencies": {
     "moment": "^2.9.0",
     "mt-downloader": "^0.2.8"

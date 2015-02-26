@@ -1,4 +1,4 @@
-# Multi Threaded File Downloader
+# Multi Threaded Files Downloader
 
 This module wrap the [mt-downloader](https://www.npmjs.com/package/mt-downloader) module and let you :
 
