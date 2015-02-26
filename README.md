@@ -41,6 +41,10 @@ You can then listen to those events :
 - `dl.on('end', function(dl) { ... });`
 - `dl.on('retry', function(dl) { ... });`
 
+## Example
+
+You can find a [complete usage example](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/simple-download.js) available in the examples/ folder.
+
 ## Downloader object
 
 ### Methods
