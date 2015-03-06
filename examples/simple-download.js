@@ -1,15 +1,17 @@
+var os   = require('os');
+var path = require('path');
+
 var Downloader = require('../lib/Downloader');
 
 var downloader = new Downloader();
 
-var dl = downloader.download('http://ipv4.download.thinkbroadband.com/512MB.zip', 'tmp/testFileDownload.zip');
-dl.start();
+var fileUrl = 'http://ipv4.download.thinkbroadband.com/512MB.zip';
+var fileSavePath = path.join(os.tmpdir(), 'mtFileDlTest1.zip');
 
-/*
-	Or with auto-start : 
+console.log('File will be downloaded from '+ fileUrl +' to '+ fileSavePath);
 
-	var dl = downloader.downloadFile('http://ipv4.download.thinkbroadband.com/512MB.zip', 'tmp/testFileDownload.zip', { autoStart: true });
-*/
+var dl = downloader.download(fileUrl, fileSavePath)
+		  .start();
 
 dl.on('start', function() {
 	console.log('EVENT - Download started !');
