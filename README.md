@@ -59,6 +59,7 @@ You can find a [complete usage example](https://github.com/leeroybrun/node-mt-fi
 - getDownloads() : get the list of downloads in manager
 - getDownloadByUrl(url) : get a specified download by URL
 - getDownloadByFilePath(filePath) : get a specified download by file path
+- removeDownloadByFilePath(filePath) : remove a specified download by file path. It does not destroy it, just remove from download manager ! Call download.destroy() before if you want to completely remove it.
 
 ### Formatters methods
 
