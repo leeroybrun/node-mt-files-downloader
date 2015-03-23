@@ -32,6 +32,22 @@ dl.on('retry', function() {
 	console.log('EVENT - Download error, retrying...');
 });
 
+dl.on('stopped', function() {
+	console.log('EVENT - Download stopped...');
+});
+
+// Wait 10s before stopping and resuming download
+setTimeout(function() {
+	console.log('DEMO - Stopping download... will be resumed in 4s');
+
+	dl.stop();
+
+	setTimeout(function() {
+		console.log('DEMO - Resuming download...');
+		dl.resume();
+	}, 4000);
+}, 10000);
+
 var timer = setInterval(function() {
 	if(dl.status == 0) {
 		console.log('Download not started.');
@@ -47,6 +63,8 @@ var timer = setInterval(function() {
 		console.log('Download completed !');
 	} else if(dl.status == -1) {
 		console.log('Download error : '+ dl.error);
+	} else if(dl.status == -2) {
+		console.log('Download stopped.');
 	}
 
 	console.log('------------------------------------------------');
