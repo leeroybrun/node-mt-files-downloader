@@ -43,9 +43,15 @@ You can then listen to those events :
 - `dl.on('destroyed', function(dl) { ... });`
 - `dl.on('retry', function(dl) { ... });`
 
-## Example
+## Examples
 
-You can find a [complete usage example](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/simple-download.js) in the examples/ folder.
+You can find complete examples in the `examples/` folder :
+
+- [Simple download](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/simple-download.js)
+- [Multiple downloads](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/multiple-downloads.js)
+- [Resume download](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/resume-download.js)
+- [Stop & resume download](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/stop-n-resume-download.js)
+- [Destroy download](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/destroy-download.js)
 
 ## Downloader object
 
