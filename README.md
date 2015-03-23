@@ -105,6 +105,7 @@ The Downloader object exposes some formatters for the stats as static methods :
 ## TODO
 
 - Validate data (setters)
+- Add tests
 
 ## Licence
 
