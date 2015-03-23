@@ -39,6 +39,7 @@ You can then listen to those events :
 - `dl.on('start', function(dl) { ... });`
 - `dl.on('error', function(dl) { ... });`
 - `dl.on('end', function(dl) { ... });`
+- `dl.on('stopped', function(dl) { ... });`
 - `dl.on('retry', function(dl) { ... });`
 
 ## Example
@@ -54,7 +55,10 @@ You can find a [complete usage example](https://github.com/leeroybrun/node-mt-fi
     - FILE_SAVE_PATH : where to save the file (including filename !)
     - options : optional, passed directly to Download object
         - autoStart : (true|false) should we automatically start the download ?
+- restart(filePath) : create a new download by restarting from an existing file
+- getDownloads() : get the list of downloads in manager
 - getDownloadByUrl(url) : get a specified download by URL
+- getDownloadByFilePath(filePath) : get a specified download by file path
 
 ### Formatters methods
 
@@ -69,6 +73,7 @@ The Downloader object exposes some formatters for the stats as static methods :
 ### Properties
 
 - status : 
+    - -2 = stopped
     - -1 = error
     - 0 = not started
     - 1 = started (downloading)
@@ -93,6 +98,8 @@ The Downloader object exposes some formatters for the stats as static methods :
 - getStats() : compute and get stats for the download
 - start() : start download
 - restart() : restart (continue) download
+- stop() : stop the download, keep the files
+- destroy() : stop the download, remove files
 
 ## TODO
 
