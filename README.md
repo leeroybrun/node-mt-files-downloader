@@ -52,6 +52,7 @@ You can find complete examples in the `examples/` folder :
 - [Resume download](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/resume-download.js)
 - [Stop & resume download](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/stop-n-resume-download.js)
 - [Destroy download](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/destroy-download.js)
+- [Custom download options](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/custom-download-options.js)
 
 ## Downloader object
 
@@ -98,9 +99,14 @@ The Downloader object exposes some formatters for the stats as static methods :
 - setUrl(url) : set the download URL
 - setFilePath(path) : set the download file save path
 - setOptions(options) : set the download options
+    - threadsCount: Default: 2, Set the total number of download threads
+    - method: Default: GET, HTTP method
+    - port: Default: 80, HTTP port
+    - timeout: Default: 5000, If no data is received, the download times out (milliseconds)
+    - range: Default: 0-100, Control the part of file that needs to be downloaded.
 - setRetryOptions(options) : set the retry options
-    - maxRetries: max number of retries before considering the download as failed
-    - retryInterval: interval (milliseconds) between each retry
+    - maxRetries: Default 5, max number of retries before considering the download as failed
+    - retryInterval: Default 2000, interval (milliseconds) between each retry
 - setMeta(meta) : set download metadata
 - setStatus(status) : set download status
 - setError(error) : set error message for download
