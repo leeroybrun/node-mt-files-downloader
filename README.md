@@ -62,7 +62,6 @@ You can find complete examples in the `examples/` folder :
     - URL : URL of the file to download
     - FILE_SAVE_PATH : where to save the file (including filename !)
     - options : optional, passed directly to Download object
-        - autoStart : (true|false) should we automatically start the download ?
 - resumeDownload(filePath) : create a new download by resuming from an existing file
 - getDownloads() : get the list of downloads in manager
 - getDownloadByUrl(url) : get a specified download by URL
