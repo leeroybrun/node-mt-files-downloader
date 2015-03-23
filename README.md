@@ -5,10 +5,11 @@
 This module wrap the [mt-downloader](https://www.npmjs.com/package/mt-downloader) module and let you :
 
 - Manage multiple downloads
-- Get stats
+- Get stats (speed, eta, completed, etc)
 - Auto-retry (continue) a download in case of error (ie. network error)
-- Manually restart a download
-- Get notified by events when a download start, fail, retry or complete
+- Manually resume a download from partial file
+- Stop and resume downloads
+- Get notified by events when a download start, fail, retry, stopped, destroyed or complete
 
 ## Install
 
@@ -32,17 +33,6 @@ Start the download :
 
 	dl.start();
 
-## Events
-
-You can then listen to those events :
-
-- `dl.on('start', function(dl) { ... });`
-- `dl.on('error', function(dl) { ... });`
-- `dl.on('end', function(dl) { ... });`
-- `dl.on('stopped', function(dl) { ... });`
-- `dl.on('destroyed', function(dl) { ... });`
-- `dl.on('retry', function(dl) { ... });`
-
 ## Examples
 
 You can find complete examples in the `examples/` folder :
@@ -53,6 +43,17 @@ You can find complete examples in the `examples/` folder :
 - [Stop & resume download](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/stop-n-resume-download.js)
 - [Destroy download](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/destroy-download.js)
 - [Custom download options](https://github.com/leeroybrun/node-mt-files-downloader/blob/master/examples/custom-download-options.js)
+
+## Events
+
+You can then listen to those events :
+
+- `dl.on('start', function(dl) { ... });`
+- `dl.on('error', function(dl) { ... });`
+- `dl.on('end', function(dl) { ... });`
+- `dl.on('stopped', function(dl) { ... });`
+- `dl.on('destroyed', function(dl) { ... });`
+- `dl.on('retry', function(dl) { ... });`
 
 ## Downloader object
 
