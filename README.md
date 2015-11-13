@@ -81,7 +81,7 @@ The Downloader object exposes some formatters for the stats as static methods :
 
 ### Properties
 
-- status : 
+- status :
     - -3 = destroyed
     - -2 = stopped
     - -1 = error
@@ -93,7 +93,7 @@ The Downloader object exposes some formatters for the stats as static methods :
 - filePath
 - options
 - meta
-
+- progressInterval
 ### Methods
 
 - setUrl(url) : set the download URL
@@ -108,6 +108,7 @@ The Downloader object exposes some formatters for the stats as static methods :
     - maxRetries: Default 5, max number of retries before considering the download as failed
     - retryInterval: Default 2000, interval (milliseconds) between each retry
 - setMeta(meta) : set download metadata
+- setProgressInterval : set progress event interval
 - setStatus(status) : set download status
 - setError(error) : set error message for download
 - getStats() : compute and get stats for the download
