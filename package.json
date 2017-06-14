@@ -18,6 +18,6 @@
   "homepage": "https://github.com/leeroybrun/node-mt-files-downloader",
   "dependencies": {
     "moment": "^2.9.0",
-    "mt-downloader": "2.2.2"
+    "zeltice-mt-downloader": "1.1.3"
   }
 }
