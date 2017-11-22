@@ -2,6 +2,8 @@
 
 [![NPM](https://nodei.co/npm/mt-files-downloader.png)](https://nodei.co/npm/mt-files-downloader/)
 
+**NOT VERY STABLE**: This module is not very stable, and is in need of a big refactor to work with the latest `mt-downloader` version. I will try to do this when I have the time, but unfotrunately other projects are taking a lot of time from me right now. Thanks for your understanding.
+
 This module wrap the [mt-downloader](https://www.npmjs.com/package/mt-downloader) module and let you :
 
 - Manage multiple downloads
